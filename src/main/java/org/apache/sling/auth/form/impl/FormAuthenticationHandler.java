@@ -836,7 +836,7 @@ public class FormAuthenticationHandler extends DefaultAuthenticationFeedbackHand
 			// default setup with name, value, cookie path and HttpOnly
 			header.append(name).append("=").append(value);
 			header.append("; Path=").append(cookiePath);
-			header.append("; HttpOnly"); // don't allow JS access
+			//header.append("; HttpOnly"); // don't allow JS access
 
 			// set the cookie domain if so configured
 			if (domain != null) {
